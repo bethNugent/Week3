@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(5, 5, 5);
+    font-size: 5px;
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    cursor: none;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(243, 243, 246);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 500px 0px antiquewhite;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: expand .5s infinite alternate;
+}
+
+/* makes cursor pulse */
+@keyframes expand {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.5);
+    }
+}
+
+/* cursorAnimation */
+
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    color: antiquewhite;
+    font-size: 60px;
+} 
+
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container div {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin: 60px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px 0px antiquewhite;
+    transition: .2s ease box-shadow;
+}
+
+.container div:hover{
+    box-shadow: 0px 0px 100px 0px antiquewhite;
+}
+
+.container h1 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.container h2 {
+    margin: 20px 0;
+    font-size: 100px;
+}
