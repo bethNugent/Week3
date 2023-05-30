@@ -10,6 +10,12 @@ However, if you hit 1 then you lose.
 If player wins or loses the player can start the game again.
 
 
+Drumkit 
+
+When a key is pressed, the associated sound is played
+When a key is clicked, the associated is played
+
+
 Keycode Generator
 
 A welcome message should be displayed (in any form).
